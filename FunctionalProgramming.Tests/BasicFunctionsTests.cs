@@ -11,9 +11,9 @@ namespace FunctionalProgramming.Tests
         [Test]
         public void TestEIf()
         {
-            var test1 = BF.EIf(false, () => "abc", () => 3);
+            var test1 = BF.EIf(true, () => "abc", () => 3);
             Assert.AreEqual("abc", test1.Match(left: n => n.ToString(), right: BF.Identity));
-            var test2 = BF.EIf(false, () => test1, () => 19);
+            var test2 = BF.EIf(true, () => test1, () => 19);
             Assert.AreEqual("abc", test2.Match(left: n => n.ToString(), right: BF.Identity));
             var test3 = BF.EIf(false, () => "abc", () => test1);
             Assert.AreEqual("abc", test3.Match(left: n => n.ToString(), right: BF.Identity));
