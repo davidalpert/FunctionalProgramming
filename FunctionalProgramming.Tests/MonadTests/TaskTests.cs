@@ -69,14 +69,14 @@ namespace FunctionalProgramming.Tests.MonadTests
                 from a in 1.FromResult()
                 from b in DelayedInt(10000, 3)
                 select a + b;
-            
+
             Assert.AreEqual(task.Result, 4);
         }
 
         private static readonly Random R = new Random();
 
         private static Task<int> Rng()
-        {            
+        {
             return DelayedInt(R.Next(5000, 10001), R.Next(1, 20));
         }
 

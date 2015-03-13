@@ -73,7 +73,7 @@ namespace FunctionalProgramming.Tests.StreamingTests
             var combined = nums.Tee(nums, Tee<int, int>());
             var results = combined.RunLog();
             results.ToList().ForEach(Console.WriteLine);
-        }        
+        }
 
         [Test]
         public void TestBoringNonDet()
