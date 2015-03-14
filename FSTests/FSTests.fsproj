@@ -59,6 +59,7 @@
   </Target>
   <ItemGroup>
     <Compile Include="MaybeTests.fs" />
+    <Compile Include="ConsListTestx.fs" />
     <Content Include="packages.config" />
     <Content Include="app.config" />
   </ItemGroup>
