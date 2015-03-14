@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="MaybeTests.fs" />
     <Compile Include="ConsListTestx.fs" />
+    <Compile Include="DictionaryExtensionsTests.fs" />
     <Content Include="packages.config" />
     <Content Include="app.config" />
   </ItemGroup>
