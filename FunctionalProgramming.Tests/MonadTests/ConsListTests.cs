@@ -13,7 +13,7 @@ namespace FunctionalProgramming.Tests.MonadTests
         {
             return ts.Reverse().Aggregate(ConsList.Nil<T>(), (lst, t) => t.Cons(lst));
         }
-            
+
         [TestCase(new int[] { }, 1)]
         [TestCase(new int[] { 1, 2, 3 }, 2)]
         [TestCase(new int[] { 1, 2, 3, 4, 5, 6 }, 3)]
